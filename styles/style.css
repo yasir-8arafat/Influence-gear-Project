@@ -6,7 +6,8 @@
 
 /* Shared Style */
 
-body {
+body header,
+main {
     padding: 25px;
 }
 
@@ -194,6 +195,7 @@ nav>h3 {
     justify-content: center;
     gap: 95px;
     align-items: center;
+    margin-bottom: 70px;
 }
 
 .feature-txt {
@@ -217,13 +219,38 @@ nav>h3 {
 
 /* Feature Section design Over */
 
-
-
-
 /* **********Main Section Design Over*********** */
 
 /* ************Footer Section Design start***** */
 
+footer {
+    background-color: black;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: rgba(217, 219, 225, 1);
+}
+
+footer a {
+    margin-right: 16px;
+    color: white;
+}
+
+footer>div {
+    margin-top: 17px;
+}
 
 /* ************Footer Section Design Over***** */
 
@@ -258,6 +285,7 @@ nav>h3 {
         flex-direction: column-reverse;
         gap: 50px;
     }
+    /* Feature section Responsive over */
 
 }
 
@@ -265,7 +293,8 @@ nav>h3 {
 @media screen and (max-width: 700px) {
     /* Shared Responsive */
 
-    body {
+    body header,
+    main {
         padding: 10px;
     }
 
@@ -310,6 +339,7 @@ nav>h3 {
     .collection-container {
         grid-template-columns: 1fr;
     }
+
     /* Collexction section responsive Over */
 
     /* Feature section Responsive start */
@@ -317,4 +347,5 @@ nav>h3 {
         flex-direction: column-reverse;
         gap: 50px;
     }
+    /* Feature section Responsive over */
 }
