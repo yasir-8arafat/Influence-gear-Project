@@ -1,0 +1,320 @@
+/* Universal Style */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Shared Style */
+
+body {
+    padding: 25px;
+}
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+main>section {
+    margin-top: 100px;
+}
+
+.cmn-font {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(108, 108, 108, 1);
+}
+
+.cmn-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 24px;
+    background-color: rgba(224, 44, 109, 1);
+    border: none;
+    border-radius: 25px;
+    margin-top: 16px;
+}
+
+/* Shared Style Over */
+
+
+
+/* ***** Header Section Style Sart ***** */
+
+header {
+    max-width: 1630px;
+    margin: 0 auto;
+}
+
+/* Navbar Section Style Start */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(58, 58, 58, 1);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 34px;
+}
+
+.nav-a {
+    text-decoration: none;
+}
+
+.bar {
+    display: none;
+}
+
+/* Navbar Section Style Over */
+
+/* Banner Section Start */
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 65px;
+}
+
+.banner-img {
+    background-image: url("../images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 475px;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+.banner-txt {
+    max-width: 582px;
+}
+
+
+.banner h1 {
+    font-size: 3.25rem;
+    font-weight: bold;
+    color: rgba(58, 58, 58, 1);
+    margin-bottom: 16px;
+}
+
+/* Banner Section Over */
+
+.header-logos {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 44px;
+    margin-bottom: 44px;
+}
+
+/* ***** Header Section Style Over ***** */
+
+/* *********Main Section Design start ********* */
+
+/* Collection section design start */
+
+.collection>h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: rgba(58, 58, 58, 1);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.collection-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 30px;
+}
+
+.collection-card {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 17px 15px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    max-width: 330px;
+}
+
+.collection-card>img {
+    width: 100%;
+}
+
+.collection-card h5 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: rgba(24, 25, 31, 1);
+    margin-bottom: 6px;
+}
+
+.collection-price {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 5px;
+}
+
+.collection-rating {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: rgba(94, 99, 102, 1);
+    margin-bottom: 5px;
+}
+
+.collection-anchor {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.collection-anchor a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(224, 44, 109, 0.87);
+    margin-top: 30px;
+}
+
+/* collection section design over */
+
+/* Feature Section design start */
+.feature {
+    display: flex;
+    justify-content: center;
+    gap: 95px;
+    align-items: center;
+}
+
+.feature-txt {
+    max-width: 610px;
+}
+
+.feature-txt h3 {
+    font-size: 2.375rem;
+    font-weight: bold;
+    color: rgba(10, 8, 38, 1);
+    margin-bottom: 16px;
+}
+
+.feature-img {
+    max-width: 404px;
+}
+
+.feature-img img {
+    width: 100%;
+}
+
+/* Feature Section design Over */
+
+
+
+
+/* **********Main Section Design Over*********** */
+
+/* ************Footer Section Design start***** */
+
+
+/* ************Footer Section Design Over***** */
+
+/* Responsive Design For Medium Devices start */
+@media screen and (min-width:700px) and (max-width:1100px) {
+
+    /* Navbar Responsive start */
+    .navbar ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Navbar Responsive Over */
+
+    /* header Logos Section Responsive Start */
+    .header-logos {
+        flex-wrap: wrap;
+    }
+
+    /* header Logos Section Responsive Over */
+
+    /* Collection section responsive start */
+
+    .collection-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Collection section responsive Over */
+
+    /* Feature section Responsive start */
+    .feature {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+}
+
+/* Responsive Design for small device Start */
+@media screen and (max-width: 700px) {
+    /* Shared Responsive */
+
+    body {
+        padding: 10px;
+    }
+
+    /* Shared responsive over */
+
+    /* navbar Responsive Start */
+
+    .rhide {
+        display: none;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    /* Navbar Responsive Over */
+
+    /* Banner section responsive start */
+    .banner {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .banner-img {
+        margin-bottom: 14px;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+
+    /* Banner responsive Over */
+
+    /* Header Logos section responsive Start */
+    .header-logos {
+        flex-wrap: wrap;
+    }
+
+    /* Header Logos section responsive Over */
+
+    /* Collexction section responsive start */
+    .collection-container {
+        grid-template-columns: 1fr;
+    }
+    /* Collexction section responsive Over */
+
+    /* Feature section Responsive start */
+    .feature {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+}

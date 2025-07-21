@@ -11,7 +11,13 @@
 }
 
 .manrope-font {
-  font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Universal Style */
+* {
+    margin: 0px;
+    padding: 0px;
 }
